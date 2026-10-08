@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:100vw;
+            height:100vh;
+            display:grid;
+            grid-template-columns: 1fr 5fr;
+        }
+
+        header{
+          
+            background-color: black;
+        }
+
+        
+        main{
+            display:grid;
+           grid-template-rows: 1fr 5fr;
+        }
+
+       .card1{
+        background-color: blue;
+       }
+       
+       .card2{
+        background-color: blueviolet;
+       }
+
+       section{
+        display:flex;
+        gap:20px;
+        flex-wrap: wrap;
+
+       }
+       article{
+        height: 100px;
+        width: 100px;
+        background-color: brown;
+       }
+        
+
+    </style>
+</head> 
+<body>
+    <div class="grid">
+        <main>
+            <div class="card1"></div>
+            <div class="card2">
+                <section>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

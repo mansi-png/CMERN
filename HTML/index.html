@@ -1,0 +1,121 @@
+<html>
+<head>
+    <title>Animal World</title>
+    <style>
+       
+        figure {
+            display: flex;
+            align-items: center;
+            width: 600px;
+            margin: 20px;
+            border: 1px solid #f0a8f5;
+            padding: 10px;
+            background-color: rgb(212, 206, 198);
+        }
+
+       
+        figure img {
+            width: 300px;
+            height: 200px;
+            transition: transform 0.3s ease;
+        }
+
+        figure img:hover {
+            transform: scale(1.1);
+        }
+
+        
+        .animal-info {
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        .animal-info strong {
+            color: green;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <header style="text-align: center;background-color: #a260b7; padding: 20px;">
+        <h1>Animal World</h1>
+        <p>Explore the Wonderful World of Animals</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#animals">Animals</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="animals">
+            <h2 style="text-align: center;">Featured Animals</h2>
+
+            <div id="container" style="display: flex; flex-wrap: wrap;">
+
+                <!-- Example: Elephant -->
+                <figure>
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.OpUhtNLG8esHDwUBk-zDAAHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Elephant">
+                    <div class="animal-info">
+                        <strong>Elephant</strong>
+                        <p>Elephants are the largest land animals on Earth, known for their intelligence and strong social bonds.</p>
+                    </div>
+                </figure>
+
+                <!-- Tiger -->
+                <figure>
+                    <img src="https://images.pexels.com/photos/2649841/pexels-photo-2649841.jpeg?cs=srgb&dl=pexels-jose-almeida-999955-2649841.jpg&fm=jpg" alt="Tiger">
+                    <div class="animal-info">
+                        <strong>Tiger</strong>
+                        <p>Tigers are powerful predators and the largest members of the cat family, known for their distinctive orange coat with black stripes.</p>
+                    </div>
+                </figure>
+
+                <!-- Dolphin -->
+                <figure>
+                    <img src="https://cdn.pixabay.com/photo/2017/09/03/10/16/dolphin-2709809_1280.jpg" alt="Dolphin">
+                    <div class="animal-info">
+                        <strong>Dolphin</strong>
+                        <p>Dolphins are highly intelligent marine mammals known for their playful behavior and complex communication skills.</p>
+                    </div>
+                </figure>
+
+                <!-- Owl -->
+                <figure>
+                    <img src="https://cdn.pixabay.com/photo/2019/02/03/11/34/owl-3972385_1280.jpg" alt="Owl">
+                    <div class="animal-info">
+                        <strong>Owl</strong>
+                        <p>Owls are nocturnal birds of prey known for their exceptional vision and silent flight, making them effective hunters.</p>
+                    </div>
+                </figure>
+
+                <!-- Penguin -->
+                <figure>
+                    <img src="https://cdn.pixabay.com/photo/2023/10/18/10/31/penguin-8323675_640.jpg" alt="Penguin">
+                    <div class="animal-info">
+                        <strong>Penguin</strong>
+                        <p>Penguins are flightless birds that are highly adapted to life in the water, known for their distinctive black and white plumage.</p>
+                    </div>
+                </figure>
+
+                <!-- Lion -->
+                <figure>
+                    <img src="https://static.vecteezy.com/system/resources/previews/047/521/694/non_2x/a-majestic-lion-stands-tall-in-the-grass-free-photo.jpg" alt="Lion">
+                    <div class="animal-info">
+                        <strong>Lion</strong>
+                        <p>Lions are large carnivorous mammals known for their strength and majestic appearance.</p>
+                    </div>
+                </figure>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>

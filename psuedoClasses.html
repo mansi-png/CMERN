@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #card{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+        #card:hover{
+            background-color: blue;
+        }
+
+        #card:active{
+            background-color:green;
+        }
+
+        input:focus{
+            background-color:rgb(155, 222, 233);
+        }
+        h1::after{
+            content:"Mansi";
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="card"></div>
+        <br/>
+        <br/>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </form>
+        <h1>Hello</h1>
+
+   
+</body>
+</html>

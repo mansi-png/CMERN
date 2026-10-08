@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillHub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #29354d;
+            background-color: white;
+        }
+        /* ================= NAVBAR ================= */
+        nav {
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 8%;
+            border-bottom: 1px solid #eeeeee;
+        }
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .logo span {
+            color: #5d5bd6;
+        }
+        .menu {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #555;
+            font-size: 14px;
+        }
+        .get-started {
+            background-color: #5d5bd6;
+            color: white;
+            border: none;
+            padding: 13px 22px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        /* ================= HERO SECTION ================= */
+        .hero {
+            min-height: 510px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 70px 10%;
+            background-color: #fafbff;
+        }
+        .hero-text {
+            width: 48%;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #eef0ff;
+            color: #5d5bd6;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-bottom: 22px;
+        }
+        h1 {
+            font-size: 48px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+        .description {
+            color: #777;
+            font-size: 16px;
+            line-height: 1.7;
+            max-width: 500px;
+            margin-bottom: 28px;
+        }
+        /* ================= BUTTONS ================= */
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+        .primary-btn,
+        .secondary-btn {
+            padding: 14px 22px;
+            border-radius: 7px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .primary-btn {
+            background-color: #5d5bd6;
+            color: white;
+            border: 2px solid #5d5bd6;
+        }
+        .secondary-btn {
+            background-color: white;
+            color: #333;
+            border: 2px solid #ddd;
+        }
+        /* ================= IMAGE ================= */
+        .hero-image {
+            width: 45%;
+            height: 330px;
+            border-radius: 25px;
+            background-image:
+                linear-gradient(
+                    rgba(70, 70, 120, 0.18),
+                    rgba(70, 70, 120, 0.18)
+                ),
+                url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            
+
+        }
+
+
+        
+
+
+
+
+
+
+        /* ================= FLOATING CARDS ================= */
+        .small-card {
+            position: absolute;
+            background-color: white;
+            padding: 13px 18px;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .learn {
+            left: -25px;
+            top: 45px;
+            animation: slideUpDown 2s ease-in-out infinite alternate;
+        }
+        .project {
+            right: -25px;
+            bottom: 45px;
+            animation: slideUpDown 2s ease-in-out infinite alternate;
+        }
+
+
+
+
+        @keyframes slideUpDown {
+
+        from {
+            transform: translateY(-25px);
+        }
+
+        to {
+            transform: translateY(25px);
+        }
+
+}
+        /* ================= WHY CHOOSE US =================
+
+        .why {
+
+            text-align: center;
+
+            padding: 75px 10%;
+        }
+
+
+        .section-small {
+
+            color: #5d5bd6;
+
+            font-size: 12px;
+
+            font-weight: bold;
+
+            margin-bottom: 12px;
+        }
+
+
+        .why h2 {
+
+            font-size: 34px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .why p {
+
+            color: #777;
+
+            font-size: 15px;
+        }
+
+ */
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 800px) {
+            nav {
+                padding: 0 5%;
+            }
+            .menu {
+                display: none;
+            }
+            .hero {
+                flex-direction: column;
+                padding: 50px 7%;
+                gap: 50px;
+               
+               
+            }
+            .hero-text,
+            .hero-image {
+
+                width: 100%;
+            }
+            h1 {
+
+                font-size: 38px;
+            }
+
+
+            .hero-image {
+
+                height: 280px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <div class="logo">
+             Skill<span>Hub</span>
+        </div>
+
+
+        <ul class="menu">
+
+            <li>
+                <a href="#">Home</a>
+            </li>
+
+            <li>
+                <a href="#">About</a>
+            </li>
+
+            <li>
+                <a href="#">Courses</a>
+            </li>
+
+            <li>
+                <a href="#">Testimonials</a>
+            </li>
+
+            <li>
+                <a href="#">Contact</a>
+            </li>
+
+        </ul>
+        <button class="get-started">
+            Get Started
+        </button>
+    </nav>
+    <!-- ================= HERO ================= -->
+    <section class="hero" style="background-color: #62b0e1;">
+        <!-- LEFT SIDE -->
+        <div class="hero-text">
+            <div class="tag">
+                Learn · Build · Grow
+            </div>
+            <h1>
+                Upgrade Your Skills
+                <br>
+                for a Brighter Future
+            </h1>
+            <p class="description">
+                SkillHub provides high-quality,
+                industry-relevant courses to help
+                you learn, build real projects,
+                and grow your career.
+            </p>
+            <div class="buttons">
+                <button class="primary-btn">
+                    Explore Courses →
+                </button>
+                <button class="secondary-btn">
+                     Watch Video
+                </button>
+            </div>
+        </div>
+        <!-- RIGHT SIDE -->
+        <div class="hero-image">
+            <div class="small-card learn">
+                 Learn Anytime
+            </div>
+            <div class="small-card project">
+                  Build Projects
+            </div>
+        </div>
+    </section>
+    <!-- ================= WHY CHOOSE US =================
+    <section class="why">
+        <div class="section-small">
+            WHY CHOOSE US
+        </div>
+        <h2>
+            Everything You Need to Succeed
+        </h2>
+        <p>
+            We provide the best learning experience
+            with modern tools and real-world projects.
+
+        </p>
+    </section> -->
+</body>
+
+</html>

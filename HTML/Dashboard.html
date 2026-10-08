@@ -1,0 +1,255 @@
+<html>
+
+<head>
+    <title>University Portal</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+
+        /* ================= HEADER ================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+
+            background-color: #222;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+
+            z-index: 1000;
+        }
+
+
+        /* Hamburger */
+
+        .menu-btn {
+            font-size: 28px;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+
+
+        /* Logo / Title */
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            margin-right: auto;
+        }
+
+
+        /* Header Navigation */
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: #00bcd4;
+        }
+
+
+        /* Hide checkbox */
+
+        #menu {
+            display: none;
+        }
+
+
+        /* ================= SIDEBAR ================= */
+
+        .sidebar {
+            position: fixed;
+            top: 60px;
+            left: 0;
+
+            width: 250px;
+            height: calc(100vh - 60px);
+
+            background-color: #333;
+
+            transform: translateX(-100%);
+            transition: transform 0.4s ease;
+
+            padding-top: 20px;
+
+            z-index: 999;
+        }
+
+
+        /* Sidebar links */
+
+        .sidebar a {
+            display: block;
+
+            color: white;
+            text-decoration: none;
+
+            padding: 15px 25px;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+
+        /* ================= SIDEBAR OPEN ================= */
+
+        #menu:checked ~ .sidebar {
+            transform: translateX(0);
+        }
+
+
+        /* ================= MAIN CONTENT ================= */
+
+        .content {
+            margin-top: 60px;
+            padding: 30px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 600px) {
+
+            /* Header links mobile par hide */
+
+            .nav-links {
+                display: none;
+            }
+
+
+            /* Sidebar mobile par full screen */
+
+            .sidebar {
+                width: 100%;
+            }
+
+
+            .content {
+                padding: 20px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- Hidden Checkbox -->
+
+    <input type="checkbox" id="menu">
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <label for="menu" class="menu-btn">
+            &#9776;
+        </label>
+
+        <div class="logo">
+            University Portal
+        </div>
+
+        <nav class="nav-links">
+
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <a href="#">Dashboard</a>
+
+        <a href="#">Courses</a>
+
+        <a href="#">Settings</a>
+
+        <a href="#">Logout</a>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="content">
+
+        <div class="card">
+
+            <h2>Welcome to University Portal</h2>
+
+            <p>
+                This is your university dashboard.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Courses</h3>
+
+            <p>
+                View your enrolled courses and academic information.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Announcements</h3>
+
+            <p>
+                No new announcements.
+            </p>
+
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>
