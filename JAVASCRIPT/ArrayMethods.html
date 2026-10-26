@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var arr = ["John", "Jane", "Jack", "Jill"];
+    console.log(arr[0]);
+
+    const obj = {
+        key1: "value1",
+        key2: "value2",
+        key3: "value3",
+        key4: "value4"
+    };
+
+    var stdDetails = [
+        { id: 25, name: "Alice", email: "alice@example.com" },
+        { id: 26, name: "Bob", email: "bob@example.com" },
+        { id: 27, name: "Charlie", email: "charlie@example.com" }
+    ];
+
+    // push
+    var num = stdDetails.push({
+        id: 28,
+        name: "David",
+        email: "david@example.com"
+    });
+
+    // unshift
+    stdDetails.unshift({
+        id: 24,
+        name: "Alex",
+        email: "alex@example.com"
+    });
+
+    // shift
+    var shiftarr = stdDetails.shift();
+
+    console.log("Removed by shift:", shiftarr);
+    console.log(stdDetails);
+
+    // slice
+    console.log("Slice Output:", stdDetails.slice(0, 3));
+
+    // splice
+    console.log("Splice Output:", stdDetails.splice(1, 2));
+    console.log(stdDetails);
+
+    // forEach Traversal
+    console.log("Student Details:");
+
+    stdDetails.forEach((student, index) => {
+        console.log(
+            "Index: " + index +
+            " | ID: " + student.id +
+            " | Name: " + student.name +
+            " | Email: " + student.email
+        );
+    });
+</script>
+
+    
+</body>
+</html>
