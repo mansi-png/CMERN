@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">DOM Manipulation</h1>
+    <p class="content">
+        This is a paragraph.Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Illustrationem, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quisquam, voluptatum. Lorem ipsum dolor
+    </p>
+
+    <p class="content">
+        This is a paragraph.Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Illustrationem, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quisquam, voluptatum. Lorem ipsum dolor
+    </p>
+
+    <p class="content">
+        This is a paragraph.Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Illustrationem, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quisquam, voluptatum. Lorem ipsum dolor
+    </p>
+
+    <p class="content">
+        This is a paragraph.Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Illustrationem, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quisquam, voluptatum. Lorem ipsum dolor
+    </p>
+    <ol id="oList">
+        <li class="item">A</li>
+        <li class="item">B</li>
+        <li class="item">C</li>
+        <li class="item">D</li>
+    </ol>
+    <script>
+        //getElementById()
+        var heading = document.getElementById("heading");
+        console.log(heading);
+
+        //getElementsByClassName()
+        var content = document.getElementsByClassName("content");
+        console.log(content);
+
+        //getElementsByTagName()
+        var para = document.getElementsByTagName("p");
+        console.log(para);
+
+        //querySelector()
+        var heading1 = document.querySelector("#heading");
+        console.log(heading1);
+
+        //querySelectorAll()
+        var content1 = document.querySelectorAll(".content");
+        console.log(content1);
+
+
+        var ol = document.getElementById("oList");
+        console.log(ol);
+        
+
+        // console.log(heading.innerText);
+        // heading.innerText = "DOM Manipulation Example";
+
+        heading.innerHTML += "Hello";
+
+        heading.style.color = "red";
+        heading.style.backgroundColor = "yellow";
+        heading.style['background-color'] = "lightgreen";
+
+
+
+        //SETATTRIBUTES()
+        
+
+
+
+    </script> 
+</body>
+</html>
